@@ -2,11 +2,18 @@
   "manifest_version": 2,
   "name": "Chrome Cookie Monster",
   "version": "0.1",
-  "description": "Eliminate the cookie cache when the browser is started",
+  "description": "Clear the storage cache when the browser is started or you visit a new URL",
   "browser_action": {
-    "default_icon": "icon.png"
-  }
+    "default_title": "Cookie Monster",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons": { "16": "icon.png",
+             "48": "icon.png",
+            "128": "icon.png" },
+
   "permissions": [
-    "browsing_data"
+    "browsingData"
   ]
 }
