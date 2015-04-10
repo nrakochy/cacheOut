@@ -1,0 +1,25 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+@import url("//fonts.googleapis.com/css?family=Raleway:100");
+
+body {
+  background: #27556C;
+  color: WhiteSmoke;
+  line-height: 2.0;
+  font-size: 62.5%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 5.2em;
+}
+
+h2 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 3.6em;
+}
+
+

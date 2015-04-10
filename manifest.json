@@ -4,16 +4,23 @@
   "version": "0.1",
   "description": "Clear the storage cache when the browser is started or you visit a new URL",
   "browser_action": {
-    "default_title": "Cookie Monster",
+    "default_title": "Customize your cache clearing preferences",
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
 
-  "icons": { "16": "icon.png",
-             "48": "icon.png",
-            "128": "icon.png" },
+  "background": {
+    "scripts": ["cacheEater.js"],
+    "persistent": false
+  },
+
+"icons": {
+  "16": "icon.png",
+  "48": "icon.png",
+  "128": "icon.png" },
 
   "permissions": [
-    "browsingData"
+    "browsingData",
+    "tabs"
   ]
 }

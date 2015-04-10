@@ -1,12 +1,13 @@
-var time = new Date().getTime();
-var milliSecondsPerDay = 1000 * 60 * 60 * 24;
-var oneWeekAgo = time - (millisecondsPerDay * 7);
-var oneMonthAgo = (time - (millisecondsPerDay * 31);
-var oneYearAgo = (time - (millisecondsPerDay * 365);
+chrome.tabs.onUpdated.addListener(function(tabID, changeInfo, tab){
+  removeData();
+});
 
-var removeData = function(){
+function removeData(){
+  var time = new Date().getTime();
+  var milliSecondsPerDay = 1000 * 60 * 60 * 24;
+  var twentyYearsAgo = time - (milliSecondsPerDay * 365 * 20);
   chrome.browsingData.remove({
-    "since": oneYearAgo
+    "since": twentyYearsAgo
   }, {
     "appcache": true,
     "cache": true,
