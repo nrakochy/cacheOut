@@ -1,25 +1,65 @@
-@import url("//fonts.googleapis.com/css?family=Open+Sans");
-@import url("//fonts.googleapis.com/css?family=Raleway:100");
-
 body {
-  background: #27556C;
+  font-family: 'Open Sans', Georgia, Times;
   color: WhiteSmoke;
-  line-height: 2.0;
+  line-height: 1.8;
   font-size: 62.5%;
-  margin: 0px;
-  padding: 0px;
-}
-
-h1 {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   text-align: center;
-  font-size: 5.2em;
 }
 
 h2 {
+  height: 50px;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 1.8em;
   text-align: center;
-  font-size: 3.6em;
+  color: WhiteSmoke;
+  background: Orange;
+  border-radius: 10px;
+  padding: 10px;
 }
+
+img {
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+#main {
+  background: #404040;
+  border-radius: 10px;
+  height: 300px;
+  width: 250px;
+  margin: 0px;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 5px;
+}
+
+
+div {
+  -webkit-column-count: 2;
+  padding: 5px 15px 5px;
+  text-align: left;
+}
+
+#options {
+  -webkit-column-count: 2;
+}
+
+#save{
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  background: Orange;
+  font-size: 1.8em;
+  width: 210px;
+  color: WhiteSmoke;
+}
+
+#save:hover {
+  background: #404040;
+  color: WhiteSmoke;
+  cursor: pointer;
+}
+
 
 

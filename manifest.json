@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Chrome Cookie Monster",
+  "name": "Cache Out",
   "version": "0.1",
-  "description": "Clear the storage cache when the browser is started or you visit a new URL",
+  "description": "Clears the storage cache in the background when the browser is started or you visit a new URL",
   "browser_action": {
     "default_title": "Customize your cache clearing preferences",
     "default_icon": "icon.png",
@@ -10,7 +10,7 @@
   },
 
   "background": {
-    "scripts": ["cacheEater.js"],
+    "scripts": ["cacheOut.js"],
     "persistent": false
   },
 

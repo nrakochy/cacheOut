@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:100">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <script>
+function toggle(source) {
+  checkboxes = document.getElementsById('options');
+  for(var i=0, i < checkboxes.length; i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+    </script>
+  </head>
+  <body>
+      <h2><img src="icon.png" alt="Cache Out">Customize Removal Preferences</h2>
+    <section id='main'>
+      <div id="selectAll"><input type="checkbox">Select All<br/><br/></div>
+      <div id='options'>
+        <label><input type="checkbox" id="appCache">appCache</label><br/>
+        <label><input type="checkbox" id="cache">cache</label><br/>
+        <label><input type="checkbox" id="cookies">cookies</label><br/>
+        <label><input type="checkbox" id="downloads">downloads</label><br/>
+        <label><input type="checkbox" id="fileSystems">fileSystems</label><br/>
+        <label><input type="checkbox" id="formData">formData</label><br/>
+        <label><input type="checkbox" id="history">history</label><br/>
+        <label><input type="checkbox" id="indexedDB">indexedDB</label><br/>
+        <label><input type="checkbox" id="localStorage">localStorage</label><br/>
+        <label><input type="checkbox" id="pluginData">pluginData</label><br/>
+        <label><input type="checkbox" id="passwords">passwords</label><br/>
+        <label><input type="checkbox" id="webSQL">webSQL</label><br/>
+      </div><br/>
+      <button id="save">Save</button>
+    </section>
+  </body>
+</html>
